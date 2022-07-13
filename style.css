@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #f4f8fb;
+  padding: 4rem;
+}
+
+.stopwatch {
+  padding: 1rem 0;
+}
+
+.btn {
+  color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 60px;
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.disabled-btn {
+  background: transparent !important;
+  cursor: not-allowed;
+  color: #beb2a9;
+}
+
+.stopwatch-controls-start {
+  background: #1da49c;
+}
+
+.stopwatch-controls-pause {
+  background: #fb6580;
+}
+
+.stopwatch-controls-split {
+  background: #f29d26;
+}
+
+.stopwatch-controls-reset {
+  background: #4486d0;
+}
+
+.stopwatch-split-time-title {
+  font-size: 1.2rem;
+  color: #f29d26;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+.stopwatch-time {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.stopwatch-splits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: #e0e0e0 1px solid;
+}
+
+.stopwatch-splits-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.stopwatch-splits-list li span {
+  text-transform: capitalize;
+}
+
+.stopwatch-splits-list li span.split-item {
+  color: #f29d26;
+}
+
+.stopwatch-splits-list li span.pause-item {
+  color: #fb6580;
+}

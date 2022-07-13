@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="stopwatch">
+        <p id="stopwatch-time" class="stopwatch-time">
+          00:00:00.0<sub>00</sub>
+        </p>
+        <div id="stopwatch-split-time-title" class="stopwatch-split-time-title">
+          Split Time
+        </div>
+        <div class="stopwatch-controls">
+          <button id="start-pause-btn" class="btn stopwatch-controls-start">
+            start
+          </button>
+          <button
+            id="split-btn"
+            class="btn disabled-btn stopwatch-controls-split"
+          >
+            split
+          </button>
+          <button
+            id="reset-btn"
+            class="btn disabled-btn stopwatch-controls-reset"
+          >
+            reset
+          </button>
+        </div>
+      </div>
+      <ul id="stopwatch-splits-list" class="stopwatch-splits-list"></ul>
+    </div>
+  </body>
+</html>
